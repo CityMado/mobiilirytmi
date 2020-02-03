@@ -27,6 +27,12 @@ public class Bullet : MonoBehaviour
             enemyH.Health -= damage;
             Destroy(gameObject);
          }
+        if (collision.gameObject.tag == "Shield")
+        {
+            Debug.Log("SHIELD HIT!!!!");
+            Destroy(gameObject);
+
+        }
     }
 
 
